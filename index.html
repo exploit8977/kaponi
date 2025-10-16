@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaponi – Salón krásy | Manikúra, Pedikúra, Kosmetika, Masáže</title>
+  <meta name="description" content="Profesionální salón krásy Kaponi nabízí manikúru, pedikúru, kosmetiku, masáže a světelnou terapii. Praha 4, objednávky na +420 777 123 456.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Color Editor -->
+  <div class="color-editor" id="colorEditor">
+    <button class="editor-toggle" id="editorToggle">🎨</button>
+    <div class="editor-title">
+      <span>Editor barev</span>
+    </div>
+    
+    <div class="color-group">
+      <label class="color-label">Nadpisy (h1, h2, h3)</label>
+      <div class="color-options" id="headingColors">
+        <div class="color-option" style="background:#7c3aed;" data-color="#7c3aed"></div>
+        <div class="color-option" style="background:#ef4444;" data-color="#ef4444"></div>
+        <div class="color-option" style="background:#f97316;" data-color="#f97316"></div>
+        <div class="color-option" style="background:#eab308;" data-color="#eab308"></div>
+        <div class="color-option" style="background:#22c55e;" data-color="#22c55e"></div>
+        <div class="color-option" style="background:#3b82f6;" data-color="#3b82f6"></div>
+        <div class="color-option" style="background:#8b5cf6;" data-color="#8b5cf6"></div>
+        <div class="color-option" style="background:#ec4899;" data-color="#ec4899"></div>
+        <div class="color-option" style="background:#06b6d4;" data-color="#06b6d4"></div>
+        <div class="color-option" style="background:#000000;" data-color="#000000"></div>
+      </div>
+    </div>
+    
+    <div class="color-group">
+      <label class="color-label">Pozadí</label>
+      <div class="color-options" id="backgroundColors">
+        <div class="color-option" style="background:#fafafa;" data-color="#fafafa"></div>
+        <div class="color-option" style="background:#ffffff;" data-color="#ffffff"></div>
+        <div class="color-option" style="background:#f5f3ff;" data-color="#f5f3ff"></div>
+        <div class="color-option" style="background:#fef7ed;" data-color="#fef7ed"></div>
+        <div class="color-option" style="background:#f0f9ff;" data-color="#f0f9ff"></div>
+        <div class="color-option" style="background:#f8fafc;" data-color="#f8fafc"></div>
+        <div class="color-option" style="background:#f1f5f9;" data-color="#f1f5f9"></div>
+        <div class="color-option" style="background:#f0fdf4;" data-color="#f0fdf4"></div>
+        <div class="color-option" style="background:#000000;" data-color="#000000"></div>
+      </div>
+    </div>
+    
+    <div class="color-group">
+      <label class="color-label">Hlavní barva</label>
+      <div class="color-options" id="primaryColors">
+        <div class="color-option" style="background:#7c3aed;" data-color="#7c3aed"></div>
+        <div class="color-option" style="background:#ef4444;" data-color="#ef4444"></div>
+        <div class="color-option" style="background:#f97316;" data-color="#f97316"></div>
+        <div class="color-option" style="background:#eab308;" data-color="#eab308"></div>
+        <div class="color-option" style="background:#22c55e;" data-color="#22c55e"></div>
+        <div class="color-option" style="background:#3b82f6;" data-color="#3b82f6"></div>
+        <div class="color-option" style="background:#8b5cf6;" data-color="#8b5cf6"></div>
+        <div class="color-option" style="background:#ec4899;" data-color="#ec4899"></div>
+        <div class="color-option" style="background:#06b6d4;" data-color="#06b6d4"></div>
+        <div class="color-option" style="background:#000000;" data-color="#000000"></div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <!-- ZDE VLOŽTE FOTOGRAFII PRO POZADÍ HLAVIČKY -->
+    <div class="header-bg" id="headerBackground" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
+    
+    <div class="logo-container">
+      <!-- ZDE VLOŽTE LOGO -->
+      <div id="logoPreview" class="logo-preview">
+        <div class="logo-placeholder">KAPONI</div>
+      </div>
+    </div>
+    
+    <div class="container header-content">
+      <h1>Kaponi</h1>
+      <p class="tagline">Salón krásy s profesionální péčí a osobním přístupem</p>
+      <a href="#kontakt" class="btn">Objednat se</a>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="logo">Kaponi</a>
+      <div class="nav-links" id="navLinks">
+        <button onclick="scrollToSection('sluzby')">Služby</button>
+        <button onclick="scrollToSection('kosmetika')">Kosmetika</button>
+        <button onclick="scrollToSection('pedikura')">Pedikúra</button>
+        <button onclick="scrollToSection('manikura')">Manikúra</button>
+        <button onclick="scrollToSection('masaze')">Masáže</button>
+        <button onclick="scrollToSection('terapie')">Světelná terapie</button>
+        <button onclick="scrollToSection('doucovani')">Doučování</button>
+        <button onclick="scrollToSection('kontakt')">Kontakt</button>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    </div>
+  </nav>
+
+  <section id="sluzby">
+    <div class="container">
+      <div class="section-title">
+        <h2>Naše služby</h2>
+        <p class="section-subtitle">Nabízíme komplexní péči o vaši krásu a pohodu v příjemném prostředí našeho salónu</p>
+      </div>
+      
+      <div class="card-grid">
+        <div class="card">
+          <h3>Kosmetika</h3>
+          <p>Profesionální kosmetické ošetření včetně liftingu modrým laserem pro omlazení a rozzáření pleti.</p>
+          <a href="#kosmetika" style="color: var(--primary); font-weight: 500; margin-top: 15px; display: inline-block;">Více informací →</a>
+        </div>
+        
+        <div class="card">
+          <h3>Pedikúra</h3>
+          <p>Klasická i wellness pedikúra s lázeňskými procedurami pro dokonalou péči o vaše nohy.</p>
+          <a href="#pedikura" style="color: var(--primary); font-weight: 500; margin-top: 15px; display: inline-block;">Více informací →</a>
+        </div>
+        
+        <div class="card">
+          <h3>Manikúra</h3>
+          <p>Široká nabídka manikúry od klasické po speciální ošetření s parafínovým zábalem nebo P-Shine.</p>
+          <a href="#manikura" style="color: var(--primary); font-weight: 500; margin-top: 15px; display: inline-block;">Více informací →</a>
+        </div>
+        
+        <div class="card">
+          <h3>Masáže</h3>
+          <p>Relaxační, klasické i speciální masáže včetně lávových kamenů a baňkování pro dokonalé uvolnění.</p>
+          <a href="#masaze" style="color: var(--primary); font-weight: 500; margin-top: 15px; display: inline-block;">Více informací →</a>
+        </div>
+        
+        <div class="card">
+          <h3>Masážní křeslo</h3>
+          <p>Široká škála masážních programů zaměřených na různé části těla a potřeby klientů.</p>
+          <a href="#masazni-kreslo" style="color: var(--primary); font-weight: 500; margin-top: 15px; display: inline-block;">Více informací →</a>
+        </div>
+        
+        <div class="card">
+          <h3>Svitelná terapie</h3>
+          <p>Inovativní terapie fotonovým světlem pro řešení kožních problémů a omlazení pleti.</p>
+          <a href="#terapie" style="color: var(--primary); font-weight: 500; margin-top: 15px; display: inline-block;">Více informací →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kosmetika" class="container">
+    <div class="card">
+      <h2>Kosmetika</h2>
+      <ul class="service-list">
+        <li>Lifting modrým laserem – oční okolí</li>
+        <li>Lifting modrým laserem – obličej</li>
+        <li>Lifting modrým laserem – obličej, krk, dekolt</li>
+      </ul>
+      <p>Metoda založená na principu působení světla určité vlnové délky prostřednictvím LED diod.  
+      Zesiluje účinky ošetření, stimuluje buněčný metabolismus, zlepšuje mikrocirkulaci a zvyšuje aktivitu zárodečných buněk kolagenu, které přispívají k následnému viditelnému omlazení a rozzáření pleti.  
+      Odstraňování menších specifických estetických problémů, např. podbradek.</p>
+    </div>
+  </section>
+
+  <section id="pedikura" class="container">
+    <div class="card">
+      <h2>Pedikúra</h2>
+      <ul class="service-list">
+        <li>Mokrá pedikúra a lakování (barva/výživa)</li>
+      </ul>
+      <h3>Wellness pedikúra</h3>
+      <ul class="service-list">
+        <li>Lázeň</li>
+        <li>Peeling</li>
+        <li>Maska</li>
+        <li>Masáž</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="manikura" class="container">
+    <div class="card">
+      <h2>Manikúra</h2>
+      <ul class="service-list">
+        <li>Klasická manikúra</li>
+        <li>Manikúra a parafínový zábal</li>
+        <li>Manikúra a p-shine</li>
+        <li>Manikúra a lakování</li>
+        <li>Manikúra a shellac</li>
+        <li>Odstranění shellacu</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="masaze" class="container">
+    <div class="card">
+      <h2>Masáže</h2>
+      <ul class="massage-list">
+        <li>Relaxační, klasická, hloubková, lávovými kameny, baňkami</li>
+        <li>55 minut</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="masazni-kreslo" class="container">
+    <div class="card">
+      <h2>Masážní křeslo</h2>
+      <ul class="massage-list">
+        <li>Ramena a krk</li>
+        <li>Masáž beder</li>
+        <li>Sportovní masáž</li>
+        <li>Protažení</li>
+        <li>Hluboká masáž</li>
+        <li>Jemná masáž</li>
+        <li>Lymfatická masáž</li>
+        <li>Rodinná péče</li>
+        <li>Klasická masáž</li>
+        <li>Obnova</li>
+        <li>Moderní masážní technika</li>
+        <li>Pohodlí a odpočinek</li>
+        <li>Uvolnění pro spánek</li>
+        <li>Péče o krční páteř</li>
+        <li>Péče o celá záda</li>
+        <li>Masáž podle AL</li>
+        <li>Masáž pro muže</li>
+        <li>Masáž pro ženy</li>
+        <li>Masáž uvolnění mysli</li>
+        <li>Thajská masáž</li>
+        <li>Zaměření na horní část těla</li>
+        <li>Zaměření na spodní část těla</li>
+        <li>Lymfatická masáž</li>
+        <li>Ranní uvolnění – doprovázeno hudbou</li>
+        <li>Uvolnění pro spánek – doprovázeno hudbou</li>
+        <li>Uvolnění od stresu – doprovázeno hudbou</li>
+        <li>Kolébání – doprovázeno hudbou</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="terapie" class="container">
+    <div class="card">
+      <h2>Světelná terapie</h2>
+      <ul class="therapy-list">
+        <li>Světelná terapie</li>
+      </ul>
+      <p>Terapie představuje inovativní způsob, jak ošetřit pleť. Díky terapii fotonovým světlem, která patří v oblasti dermatologie mezi nejefektivnější nástroje v boji proti chronickým kožním defektům, se vám podaří zbavit pupínků, pigmentových skvrn, redukovat vrásky či pihy. Fotonová terapie využívá světelných vln o specifické délce, které prostřednictvím LED diod pronikají do kůže. Světlo dokáže vstoupit do nitra buňky neinvazivně a bezbolestně, kde následně aktivuje fotoreceptory. Na výběr ze 6 různých světel podle zaměření.</p>
+    </div>
+  </section>
+
+  <section id="doucovani" class="container">
+    <div class="card">
+      <h2>Doučování – 1. stupeň ZŠ</h2>
+      <p>Nabízíme individuální doučování všech hlavních předmětů pro žáky 1. stupně základní školy v klidném prostředí a s osobním přístupem.</p>
+    </div>
+  </section>
+
+  <section id="kontakt" class="container">
+    <div class="card">
+      <h2>Kontakt</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p>Pro objednání stačí napsat nebo zavolat:</p>
+          
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>+420 777 123 456</strong>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong>info@kaponi.cz</strong>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Údolní 315, Praha 4, 142 00</strong>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3>Otevírací doba</h3>
+          <table class="hours-table">
+            <tr>
+              <td>Po–Pá</td>
+              <td>9:00 – 18:00</td>
+            </tr>
+            <tr>
+              <td>Sobota</td>
+              <td>9:00 – 13:00</td>
+            </tr>
+            <tr>
+              <td>Neděle</td>
+              <td>zavřeno</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Kaponi – Salón krásy</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
