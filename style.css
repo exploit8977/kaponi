@@ -89,12 +89,12 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  letter-spacing: -0.025em;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.025em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Přidáno pro lepší kontrast */
 }
-
 .tagline {
   font-size: 1.25rem;
   font-weight: 300;
